@@ -60,42 +60,42 @@ body {
   color: var(--color-900);
 
   font-family: var(--app-family-body);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 2.0275em; /* 32.44px */
+  font-size: 2.0272em; /* 36.49px */
+  line-height: 1.3154em; /* 48px */
+  margin-top: 0.6577em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 1.8022em; /* 32.44px */
   line-height: 1.4797em; /* 48px */
   margin-top: 0.7398em;
   margin-bottom: 0em;
 }
 
-h2 {
-  font-size: 1.8019em; /* 28.83px */
+h3 {
+  font-size: 1.6017em; /* 28.83px */
   line-height: 1.6649em; /* 48px */
   margin-top: 0.8325em;
-  margin-bottom: 0em;
-}
-
-h3 {
-  font-size: 1.6019em; /* 25.63px */
-  line-height: 1.8728em; /* 48px */
-  margin-top: 0.9364em;
   margin-bottom: 0em;
 }
 
 p {
   color: var(--color-700);
 
-  font-size: 1em; /* 16px */
-  line-height: 1.5em; /* 24px */
-  margin: 0 0 1.5em 0;
+  font-size: 1em; /* 18px */
+  line-height: 1.3333em; /* 24px */
+  margin: 0 0 1.3333em 0;
 }
 
-.small {
-  font-size: 0.8888em; /* 14.22px */
-  line-height: 1.6878em; /* 24px */
-  margin-top: 1.6878em;
+small {
+  font-size: 0.8889em; /* 16px */
+  line-height: 1.5em; /* 24px */
+  margin-top: 1.5em;
   margin-bottom: 0em;
 }
 
