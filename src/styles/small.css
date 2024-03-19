@@ -61,26 +61,34 @@ body {
 
   font-family: var(--app-family-body);
   font-size: 18px;
+
+  padding: 0 1rem 2rem 2rem;
 }
 
 h1 {
+  font-family: var(--app-family-title);
+
   font-size: 2.0272em; /* 36.49px */
-  line-height: 1.3154em; /* 48px */
-  margin-top: 0.6577em;
+  line-height: 1.4799em; /* 54px */
+  margin-top: 0.7399em;
   margin-bottom: 0em;
 }
 
 h2 {
+  font-family: var(--app-family-title);
+
   font-size: 1.8022em; /* 32.44px */
-  line-height: 1.4797em; /* 48px */
-  margin-top: 0.7398em;
+  line-height: 1.6646em; /* 54px */
+  margin-top: 0.8323em;
   margin-bottom: 0em;
 }
 
 h3 {
+  font-family: var(--app-family-title);
+
   font-size: 1.6017em; /* 28.83px */
-  line-height: 1.6649em; /* 48px */
-  margin-top: 0.8325em;
+  line-height: 1.873em; /* 54px */
+  margin-top: 0.9365em;
   margin-bottom: 0em;
 }
 
@@ -88,14 +96,14 @@ p {
   color: var(--color-700);
 
   font-size: 1em; /* 18px */
-  line-height: 1.3333em; /* 24px */
-  margin: 0 0 1.3333em 0;
+  line-height: 1.5em; /* 27px */
+  margin: 0 0 1.5em 0;
 }
 
 small {
   font-size: 0.8889em; /* 16px */
-  line-height: 1.5em; /* 24px */
-  margin-top: 1.5em;
+  line-height: 1.6875em; /* 27px */
+  margin-top: 1.6875em;
   margin-bottom: 0em;
 }
 
