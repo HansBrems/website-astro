@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/NotoSans-Thin.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('/fonts/IBMPlexSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('/fonts/IBMPlexSerif-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-900: rgba(255, 253, 237, 0.1);
+  --bg-700: rgba(255, 253, 237, 0.1);
+
+  --color-900: rgb(58, 46, 57);
+  --color-700: rgba(58, 46, 57, 0.75);
+  --color-500: rgba(58, 46, 57, 0.5);
+  --color-accent: rgb(88, 176, 156);
+  --color-accent-light: rgba(88, 176, 156, 0.6);
+
+  --app-family-body: 'Open Sans', Verdana, Tahoma, Helvetica, sans-serif;
+  --app-family-title: 'IBM Plex Serif', Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+  /* Ensures that the text size remains consistent. */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  /* Apply a natural box layout model to all elements */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-900);
+  color: var(--color-900);
+
+  font-family: var(--app-family-body);
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.0275em; /* 32.44px */
+  line-height: 1.4797em; /* 48px */
+  margin-top: 0.7398em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 1.8019em; /* 28.83px */
+  line-height: 1.6649em; /* 48px */
+  margin-top: 0.8325em;
+  margin-bottom: 0em;
+}
+
+h3 {
+  font-size: 1.6019em; /* 25.63px */
+  line-height: 1.8728em; /* 48px */
+  margin-top: 0.9364em;
+  margin-bottom: 0em;
+}
+
+p {
+  color: var(--color-700);
+
+  font-size: 1em; /* 16px */
+  line-height: 1.5em; /* 24px */
+  margin: 0 0 1.5em 0;
+}
+
+.small {
+  font-size: 0.8888em; /* 14.22px */
+  line-height: 1.6878em; /* 24px */
+  margin-top: 1.6878em;
+  margin-bottom: 0em;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent-light);
+}
