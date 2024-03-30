@@ -40,6 +40,47 @@
 
   --app-family-body: 'Open Sans', Verdana, Tahoma, Helvetica, sans-serif;
   --app-family-title: 'IBM Plex Serif', Georgia, 'Times New Roman', Times, serif;
+
+  --app-small-font-size: 0.83em;
+  --app-small-line-height: 1.92em;
+  --app-small-margin-top: 1.92em;
+  --app-small-margin-bottom: 1.92em;
+  --app-p-font-size: 1em;
+  --app-p-line-height: 1.6em;
+  --app-p-margin-top: 1.6em;
+  --app-p-margin-bottom: 1.6em;
+  --app-h6-font-size: 1.2em;
+  --app-h6-line-height: 1.3333em;
+  --app-h6-margin-top: 1.3333em;
+  --app-h6-margin-bottom: 1.3333em;
+  --app-h5-font-size: 1.44em;
+  --app-h5-line-height: 1.1111em;
+  --app-h5-margin-top: 1.1111em;
+  --app-h5-margin-bottom: 1.1111em;
+  --app-h4-font-size: 1.73em;
+  --app-h4-line-height: 1.8519em;
+  --app-h4-margin-top: 0.9259em;
+  --app-h4-margin-bottom: 0.9259em;
+  --app-h3-font-size: 2.07em;
+  --app-h3-line-height: 1.5432em;
+  --app-h3-margin-top: 0.7716em;
+  --app-h3-margin-bottom: 0.7716em;
+  --app-h2-font-size: 2.49em;
+  --app-h2-line-height: 1.286em;
+  --app-h2-margin-top: 0.643em;
+  --app-h2-margin-bottom: 0.643em;
+  --app-h1-font-size: 2.99em;
+  --app-h1-line-height: 1.0717em;
+  --app-h1-margin-top: 0.5358em;
+  --app-h1-margin-bottom: 0.5358em;
+  --app-xl-font-size: 3.58em;
+  --app-xl-line-height: 1.3396em;
+  --app-xl-margin-top: 0.4465em;
+  --app-xl-margin-bottom: 0.4465em;
+  --app-xxl-font-size: 4.3em;
+  --app-xxl-line-height: 1.1163em;
+  --app-xxl-margin-top: 0.3721em;
+  --app-xxl-margin-bottom: 0.3721em;
 }
 
 html {
@@ -63,48 +104,55 @@ body {
   font-size: 18px;
 
   padding: 0 1rem 2rem 2rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 h1 {
   font-family: var(--app-family-title);
 
-  font-size: 2.0272em; /* 36.49px */
-  line-height: 1.4799em; /* 54px */
-  margin-top: 0.7399em;
-  margin-bottom: 0em;
+  font-size: var(--app-h1-font-size);
+  line-height: var(--app-h1-line-height);
+  margin-top: var(--app-h1-margin-top);
+  margin-bottom: var(--app-h1-margin-bottom);
 }
 
 h2 {
   font-family: var(--app-family-title);
 
-  font-size: 1.8022em; /* 32.44px */
-  line-height: 1.6646em; /* 54px */
-  margin-top: 0.8323em;
-  margin-bottom: 0em;
+  font-size: var(--app-h2-font-size);
+  line-height: var(--app-h2-line-height);
+  margin-top: var(--app-h2-margin-top);
+  margin-bottom: var(--app-h2-margin-bottom);
 }
 
 h3 {
   font-family: var(--app-family-title);
 
-  font-size: 1.6017em; /* 28.83px */
-  line-height: 1.873em; /* 54px */
-  margin-top: 0.9365em;
-  margin-bottom: 0em;
+  font-size: var(--app-h3-font-size);
+  line-height: var(--app-h3-line-height);
+  margin-top: var(--app-h3-margin-top);
+  margin-bottom: var(--app-h3-margin-bottom);
 }
 
 p {
   color: var(--color-700);
 
-  font-size: 1em; /* 18px */
-  line-height: 1.5em; /* 27px */
-  margin: 0 0 1.5em 0;
+  font-size: var(--app-p-font-size);
+  line-height: var(--app-p-line-height);
+  margin-top: var(--app-p-margin-top);
+  margin-bottom: var(--app-p-margin-bottom);
 }
 
 small {
-  font-size: 0.8889em; /* 16px */
-  line-height: 1.6875em; /* 27px */
-  margin-top: 1.6875em;
-  margin-bottom: 0em;
+  display: inline-block;
+
+  font-size: var(--app-small-font-size);
+  line-height: var(--app-small-line-height);
+  margin-top: var(--app-small-margin-top);
+  margin-bottom: var(--app-small-margin-bottom);
 }
 
 a {
