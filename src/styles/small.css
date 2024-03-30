@@ -43,7 +43,7 @@
 
   --app-small-font-size: 0.83em;
   --app-small-line-height: 1.92em;
-  --app-small-margin-top: 1.92em;
+  --app-small-margin-top: 0em;
   --app-small-margin-bottom: 1.92em;
   --app-p-font-size: 1em;
   --app-p-line-height: 1.6em;
@@ -108,6 +108,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
+
+  /* Verticle Rhythm debug */
+  /* background: linear-gradient(
+    rgba(255, 0, 0, 0.15),
+    rgba(255, 0, 0, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 60px 28.8px; */
 }
 
 h1 {
@@ -117,6 +125,15 @@ h1 {
   line-height: var(--app-h1-line-height);
   margin-top: var(--app-h1-margin-top);
   margin-bottom: var(--app-h1-margin-bottom);
+}
+
+h1.xxl {
+  font-family: var(--app-family-title);
+
+  font-size: var(--app-xxl-font-size);
+  line-height: var(--app-xxl-line-height);
+  margin-top: var(--app-xxl-margin-top);
+  margin-bottom: var(--app-xxl-margin-bottom);
 }
 
 h2 {
