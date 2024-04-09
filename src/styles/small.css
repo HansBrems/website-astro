@@ -1,14 +1,22 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans';
   src: url('/fonts/NotoSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans';
   src: url('/fonts/NotoSans-Thin.woff2') format('woff2');
   font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('/fonts/IBMPlexSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -38,7 +46,7 @@
   --color-accent: rgb(88, 176, 156);
   --color-accent-light: rgba(88, 176, 156, 0.6);
 
-  --app-family-body: 'Open Sans', Verdana, Tahoma, Helvetica, sans-serif;
+  --app-family-body: 'Noto Sans', Verdana, Tahoma, Helvetica, sans-serif;
   --app-family-title: 'IBM Plex Serif', Georgia, 'Times New Roman', Times, serif;
 
   --app-small-font-size: 0.83em;
@@ -118,15 +126,6 @@ body {
   background-size: 60px 28.8px; */
 }
 
-h1 {
-  font-family: var(--app-family-title);
-
-  font-size: var(--app-h1-font-size);
-  line-height: var(--app-h1-line-height);
-  margin-top: var(--app-h1-margin-top);
-  margin-bottom: var(--app-h1-margin-bottom);
-}
-
 h1.xxl {
   font-family: var(--app-family-title);
 
@@ -136,8 +135,19 @@ h1.xxl {
   margin-bottom: var(--app-xxl-margin-bottom);
 }
 
+h1 {
+  font-family: var(--app-family-title);
+  font-weight: 700;
+
+  font-size: var(--app-h1-font-size);
+  line-height: var(--app-h1-line-height);
+  margin-top: var(--app-h1-margin-top);
+  margin-bottom: var(--app-h1-margin-bottom);
+}
+
 h2 {
   font-family: var(--app-family-title);
+  font-weight: 400;
 
   font-size: var(--app-h2-font-size);
   line-height: var(--app-h2-line-height);
@@ -147,11 +157,13 @@ h2 {
 
 h3 {
   font-family: var(--app-family-title);
+  font-weight: 100;
+  text-transform: uppercase;
 
   font-size: var(--app-h3-font-size);
   line-height: var(--app-h3-line-height);
   margin-top: var(--app-h3-margin-top);
-  margin-bottom: var(--app-h3-margin-bottom);
+  margin-bottom: 0;
 }
 
 p {
@@ -159,7 +171,7 @@ p {
 
   font-size: var(--app-p-font-size);
   line-height: var(--app-p-line-height);
-  margin-top: var(--app-p-margin-top);
+  /* margin-top: var(--app-p-margin-top); */
   margin-bottom: var(--app-p-margin-bottom);
 }
 
