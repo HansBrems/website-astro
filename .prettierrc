@@ -1,0 +1,13 @@
+{
+  "importOrderParserPlugins": ["decorators-legacy", "typescript"],
+  "importOrder": ["^~/", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "singleQuote": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": false
+}
