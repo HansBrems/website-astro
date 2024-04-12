@@ -1,0 +1,35 @@
+---
+import Tag from './Tag.astro';
+import { format } from 'date-fns';
+
+export interface Props {
+  project: {
+    company: string;
+    title: string;
+    description: string;
+    from: Date;
+    to: Date;
+    tags: string[];
+  };
+}
+
+const { project } = Astro.props;
+const from = format(project.from, 'MMM yyyy');
+const to = format(project.to, 'MMM yyyy');
+---
+
+<div>
+  <div class="flex justify-between">
+    <div class="mb-2">
+      <span class="text-2xl font-bold">{project.company}</span>
+      <span>·</span>
+      <span>{from} - {to}</span>
+    </div>
+  </div>
+  <div class="mb-4 text-sm text-gray-500">{project.title}</div>
+
+  <p class="mb-4">{project.description}</p>
+  <div class="flex gap-2">
+    {project.tags.map((tag: string) => <Tag tag={tag} />)}
+  </div>
+</div>
