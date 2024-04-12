@@ -17,9 +17,13 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <div class="mx-auto max-w-screen-lg px-4">
-      <slot />
+    <div
+      class="mx-auto flex flex-col gap-8 px-4 sm:max-w-screen-sm lg:max-w-screen-lg"
+    >
+      <div>
+        <slot />
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </body>
 </html>

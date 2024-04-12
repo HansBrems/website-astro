@@ -1,0 +1,43 @@
+---
+import MailIcon from './MailIcon.astro';
+import TwitterIcon from './TwitterIcon.astro';
+import GithubIcon from './GithubIcon.astro';
+import LinkedInIcon from './LinkedInIcon.astro';
+---
+
+<div class="flex justify-center gap-4">
+  <a
+    class="text-2xl hover:text-green-500"
+    href="mailto:info@longville-software.be?subject=Mail from Longville-Software.be"
+    title="Contact me"
+  >
+    <MailIcon />
+  </a>
+
+  <a
+    class="text-2xl hover:text-green-500"
+    href="https://www.linkedin.com/in/hansbrems"
+    target="_blank"
+    title="Linked-In"
+  >
+    <LinkedInIcon />
+  </a>
+
+  <a
+    class="text-2xl hover:text-green-500"
+    href="https://github.com/HansBrems"
+    target="_blank"
+    title="Github"
+  >
+    <GithubIcon />
+  </a>
+
+  <a
+    class="text-2xl hover:text-green-500"
+    href="https://twitter.com/longvillesw"
+    target="_blank"
+    title="Twitter"
+  >
+    <TwitterIcon />
+  </a>
+</div>
