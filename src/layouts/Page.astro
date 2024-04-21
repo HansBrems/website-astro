@@ -13,6 +13,20 @@ const { pageTitle } = Astro.props;
 
 <html lang="en" class="dark">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HDGEL4WEZ7"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-HDGEL4WEZ7');
+    </script>
+
     <SEO title="Longville Software" />
     <meta charset="utf-8" />
     <link rel="sitemap" href="/sitemap-index.xml" />
