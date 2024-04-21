@@ -4,5 +4,10 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://longville-software.be',
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      filter: (page) => page !== 'https://longville-software.be/dev/',
+    }),
+  ],
 });
