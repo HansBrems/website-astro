@@ -10,7 +10,7 @@ export const projects = [
   {
     title: 'Full-Stack Web Developer',
     company: 'QFrame',
-    description: `Development of a small application to facilitate declarating open mortgage loans.`,
+    description: `Development of a small application to facilitate declaring open mortgage loans.`,
     from: new Date(2020, 3),
     to: new Date(2020, 5),
     tags: ['Angular', 'React', '.NET'],
