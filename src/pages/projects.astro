@@ -1,0 +1,17 @@
+---
+import { projects } from '../data/projects';
+import Page from '../layouts/Page.astro';
+import Prose from '../components/Prose.astro';
+import WorkExperience from '../components/WorkExperience.astro';
+---
+
+<Page pageTitle="Projects">
+  <Prose>
+    <section>
+      <h1>Projects</h1>
+      <div class="not-prose flex flex-col gap-8">
+        {projects.map((project) => <WorkExperience project={project} />)}
+      </div>
+    </section>
+  </Prose>
+</Page>

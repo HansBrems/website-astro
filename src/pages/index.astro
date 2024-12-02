@@ -24,10 +24,18 @@ import Page from '../layouts/Page.astro';
       </section>
 
       <section>
-        <h1>Projects</h1>
+        <h1>Recent Projects</h1>
 
         <div class="not-prose flex flex-col gap-8">
-          {projects.map((project) => <WorkExperience project={project} />)}
+          {
+            projects
+              .slice(0, 3)
+              .map((project) => <WorkExperience project={project} />)
+          }
+        </div>
+
+        <div class="mt-4">
+          <a href="/projects">See more projects</a>
         </div>
       </section>
     </div>
