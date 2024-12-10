@@ -1,9 +1,17 @@
 ---
-const { tag } = Astro.props;
+const { color, name } = Astro.props;
+
+export interface Props {
+  color: string;
+  name: string;
+}
 ---
 
 <div
-  class="flex items-center rounded-md border-0 bg-emerald-500 px-4 py-1 text-sm font-bold text-emerald-100"
+  class={`flex items-center  border-solid p-2
+  text-xs font-bold text-stone-700 dark:text-stone-100
+  bg-stone-50 dark:bg-stone-800 rounded-md
+  border-b-[1px] border-${color}-500  dark:border-${color}-500 `}
 >
-  {tag}
+  {name}
 </div>

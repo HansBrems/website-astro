@@ -1,6 +1,7 @@
 ---
 import Tag from './Tag.astro';
 import { format } from 'date-fns';
+import { getTagColor } from '../utils/tag-helper';
 
 export interface Props {
   project: {
@@ -30,7 +31,11 @@ const to = format(project.to, 'MMM yyyy');
 
   <p>{project.description}</p>
 
-  <div class="flex gap-2">
-    {project.tags.map((tag: string) => <Tag tag={tag} />)}
+  <div class="flex flex-wrap gap-2">
+    {
+      project.tags.map((tag: string) => (
+        <Tag name={tag} color={getTagColor(tag)} />
+      ))
+    }
   </div>
 </div>

@@ -1,6 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: {
+    files: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    safelist: [
+      {
+        pattern:
+          /^(bg|border|text|from|to|via)-(pink|stone|teal)-(50|100|200|300|400|500|600|700|800|900)$/,
+        variants: ['dark'],
+      },
+    ],
+  },
   darkMode: 'selector',
   theme: {
     fontFamily: {
