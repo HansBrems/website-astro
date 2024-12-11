@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Full-Stack Web Developer",
+    "company": "Fluxys",
+    "description": "Development and maintenance of multiple gas flow metering applications, both desktop and web-based,including REST APIs.",
+    "from": "2020-06-30T22:00:00.000Z",
+    "to": "2024-12-11T21:42:34.343Z",
+    "tags": [
+      "Angular",
+      "PrimeNG",
+      "PrimeFlex",
+      "Blazor",
+      "MudBlazor",
+      "C#",
+      "ASP.NET",
+      "REST",
+      "WCF",
+      "Oracle",
+      "SQL Server",
+      "Entity Framework",
+      "NHibernate",
+      "NServiceBus",
+      "RabbitMQ",
+      "MSTest",
+      "FluentAssertions",
+      "NSubstitute",
+      "Azure DevOps",
+      "Clean Architecture"
+    ]
+  },
+  {
+    "title": "Full-Stack Web Developer",
+    "company": "QFrame",
+    "description": "Development of a small application to facilitate declaring open mortgage loans.",
+    "from": "2020-03-31T22:00:00.000Z",
+    "to": "2020-05-31T22:00:00.000Z",
+    "tags": ["Angular", "React", "ASP.NET", "Clean Architecture"]
+  },
+  {
+    "title": "Full-Stack Web Developer",
+    "company": "TUI",
+    "description": "Development of several web applications and services to support day to day operations in the finance and accounting department.",
+    "from": "2018-08-31T22:00:00.000Z",
+    "to": "2020-02-29T23:00:00.000Z",
+    "tags": [
+      "React",
+      "Material UI",
+      "Axios",
+      "TanStack Query",
+      "ASP.NET",
+      "MediatR",
+      "REST",
+      "EventStore",
+      "Keycloak",
+      "xUnit",
+      "FluentAssertions",
+      "NSubstitute",
+      "SQL Server",
+      "Azure DevOps",
+      "CQS",
+      "OpenShift",
+      "Docker"
+    ]
+  },
+  {
+    "title": "Full-Stack Web Developer",
+    "company": "YPTO",
+    "description": "Maintenance of the back-end that powers BelgianTrain.be. Development of a customer service reporting website. Development of a mobile-first web application (B2B).",
+    "from": "2015-10-31T23:00:00.000Z",
+    "to": "2018-08-31T22:00:00.000Z",
+    "tags": [
+      "React",
+      "Redux",
+      "ASP.NET",
+      "REST",
+      "WCF",
+      "Entity Framework",
+      "NServiceBus",
+      "NUnit",
+      "FluentAssertions",
+      "NSubstitute",
+      "SQL Server",
+      "BuildMaster"
+    ]
+  },
+  {
+    "title": "Back-End Web Developer",
+    "company": "BE Mobile",
+    "description": "Development of several REST APIs that provide geo-location data to customers.",
+    "from": "2015-09-30T22:00:00.000Z",
+    "to": "2015-10-31T23:00:00.000Z",
+    "tags": [".NET", "ServiceStack", "Go"]
+  },
+  {
+    "title": "Desktop App Developer",
+    "company": "Euroclear",
+    "description": "Development of tactical desktop apps aiming to quickly automate and support new business processes.",
+    "from": "2012-06-30T22:00:00.000Z",
+    "to": "2015-08-31T22:00:00.000Z",
+    "tags": [
+      "WPF",
+      "Caliburn Micro",
+      "Winforms",
+      "VBA",
+      ".NET",
+      "AutoMapper",
+      "Entity Framework",
+      "NUnit",
+      "DB2"
+    ]
+  },
+  {
+    "title": "Front-End Developer",
+    "company": "Concentra",
+    "description": "Lending a helping hand in implementing the redesign of two newspaper websites (Gazet van Antwerpen, Belang van Limburg).",
+    "from": "2012-03-31T22:00:00.000Z",
+    "to": "2012-04-30T22:00:00.000Z",
+    "tags": ["HTML", "CSS", "Javascript"]
+  },
+  {
+    "title": "Microsoft Access Developer",
+    "company": "Sesvanderhave",
+    "description": "Development of an application to keep track of lab and regulatory data.",
+    "from": "2011-01-31T23:00:00.000Z",
+    "to": "2011-04-30T22:00:00.000Z",
+    "tags": ["Microsoft Access", "VBA"]
+  }
+]
