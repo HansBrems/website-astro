@@ -36,7 +36,7 @@ export const projects = [
     description: `Development of a small application to facilitate declaring open mortgage loans.`,
     from: new Date(2020, 3),
     to: new Date(2020, 5),
-    tags: ['Angular', 'React', 'ASP.NET', 'Client Architecture'],
+    tags: ['Angular', 'React', 'ASP.NET', 'Clean Architecture'],
   },
   {
     title: 'Full-Stack Web Developer',

@@ -2,7 +2,7 @@
 import { projects } from '../data/projects';
 import Page from '../layouts/Page.astro';
 import Prose from '../components/Prose.astro';
-import WorkExperience from '../components/WorkExperience.astro';
+import WorkExperience from '../components/WorkExperience.tsx';
 ---
 
 <Page pageTitle="Projects">
@@ -10,7 +10,11 @@ import WorkExperience from '../components/WorkExperience.astro';
     <section>
       <h1>Projects</h1>
       <div class="not-prose flex flex-col gap-8">
-        {projects.map((project) => <WorkExperience project={project} />)}
+        {
+          projects.map((project) => (
+            <WorkExperience project={project} client:load />
+          ))
+        }
       </div>
     </section>
   </Prose>

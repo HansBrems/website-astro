@@ -1,4 +1,5 @@
 import partytown from '@astrojs/partytown';
+import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
@@ -12,5 +13,6 @@ export default defineConfig({
       filter: (page) => page !== 'https://longville-software.be/dev/',
     }),
     partytown({ forward: ['dataLayer.push'] }),
+    react(),
   ],
 });

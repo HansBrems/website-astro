@@ -1,7 +1,7 @@
 ---
 import { projects } from '../data/projects';
 import Prose from '../components/Prose.astro';
-import WorkExperience from '../components/WorkExperience.astro';
+import WorkExperience from '../components/WorkExperience.tsx';
 import Page from '../layouts/Page.astro';
 ---
 
@@ -30,7 +30,9 @@ import Page from '../layouts/Page.astro';
           {
             projects
               .slice(0, 3)
-              .map((project) => <WorkExperience project={project} />)
+              .map((project) => (
+                <WorkExperience project={project} client:load />
+              ))
           }
         </div>
 
