@@ -1,8 +1,11 @@
 ---
-import { projects } from '../data/projects';
+import { getCollection } from 'astro:content';
 import Page from '../layouts/Page.astro';
 import Prose from '../components/Prose.astro';
 import WorkExperience from '../components/WorkExperience.tsx';
+
+const projects = (await getCollection('projects')).map((x) => x.data);
+const categories = (await getCollection('categories')).map((x) => x.data);
 ---
 
 <Page pageTitle="Projects">
@@ -12,7 +15,11 @@ import WorkExperience from '../components/WorkExperience.tsx';
       <div class="not-prose flex flex-col gap-8">
         {
           projects.map((project) => (
-            <WorkExperience project={project} client:load />
+            <WorkExperience
+              categories={categories}
+              project={project}
+              client:load
+            />
           ))
         }
       </div>

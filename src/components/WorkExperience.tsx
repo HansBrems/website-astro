@@ -1,21 +1,17 @@
 import { format } from 'date-fns';
 import { useState } from 'react';
 
+import type { Category } from '../shared/models/category';
+import type { Project } from '../shared/models/project';
 import { getTagColor } from '../utils/tag-helper';
 import Tag from './Tag';
 
-export interface Props {
-  project: {
-    company: string;
-    title: string;
-    description: string;
-    from: Date;
-    to: Date;
-    tags: string[];
-  };
+interface Props {
+  project: Project;
+  categories: Category[];
 }
 
-export default function WorkExperience({ project }: Props) {
+export default function WorkExperience({ project, categories }: Props) {
   const from = format(project.from, 'MMM yyyy');
   const to = format(project.to, 'MMM yyyy');
 
@@ -43,7 +39,7 @@ export default function WorkExperience({ project }: Props) {
       <div className="flex flex-wrap gap-2">
         {(showAll ? project.tags : project.tags.slice(0, 5)).map(
           (tag: string) => (
-            <Tag name={tag} color={getTagColor(tag)} />
+            <Tag name={tag} color={getTagColor(categories, tag)} />
           ),
         )}
 

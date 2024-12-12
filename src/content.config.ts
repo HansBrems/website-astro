@@ -1,25 +1,17 @@
 import { file } from 'astro/loaders';
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+
+import { categorySchema } from './shared/models/category';
+import { projectSchema } from './shared/models/project';
 
 const projects = defineCollection({
   loader: file('src/data/projects.json'),
-  schema: z.object({
-    title: z.string(),
-    company: z.string(),
-    description: z.string(),
-    from: z.coerce.date(),
-    to: z.coerce.date(),
-    tags: z.array(z.string()),
-  }),
+  schema: projectSchema,
 });
 
 const categories = defineCollection({
   loader: file('src/data/categories.json'),
-  schema: z.object({
-    name: z.string(),
-    color: z.string(),
-    tags: z.array(z.string()),
-  }),
+  schema: categorySchema,
 });
 
-export const collections = { projects, categories };
+export const collections = { categories, projects };

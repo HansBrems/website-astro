@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "back-end",
     "color": "teal",
     "tags": [
@@ -29,6 +30,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "front-end",
     "color": "pink",
     "tags": [
@@ -50,5 +52,5 @@
       "Caliburn Micro"
     ]
   },
-  { "name": "other", "color": "stone", "tags": [] }
+  { "id": 3, "name": "other", "color": "stone", "tags": [] }
 ]

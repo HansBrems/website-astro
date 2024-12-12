@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Full-Stack Web Developer",
     "company": "Fluxys",
     "description": "Development and maintenance of multiple gas flow metering applications, both desktop and web-based,including REST APIs.",
@@ -29,6 +30,7 @@
     ]
   },
   {
+    "id": 2,
     "title": "Full-Stack Web Developer",
     "company": "QFrame",
     "description": "Development of a small application to facilitate declaring open mortgage loans.",
@@ -37,6 +39,7 @@
     "tags": ["Angular", "React", "ASP.NET", "Clean Architecture"]
   },
   {
+    "id": 3,
     "title": "Full-Stack Web Developer",
     "company": "TUI",
     "description": "Development of several web applications and services to support day to day operations in the finance and accounting department.",
@@ -63,6 +66,7 @@
     ]
   },
   {
+    "id": 4,
     "title": "Full-Stack Web Developer",
     "company": "YPTO",
     "description": "Maintenance of the back-end that powers BelgianTrain.be. Development of a customer service reporting website. Development of a mobile-first web application (B2B).",
@@ -84,6 +88,7 @@
     ]
   },
   {
+    "id": 5,
     "title": "Back-End Web Developer",
     "company": "BE Mobile",
     "description": "Development of several REST APIs that provide geo-location data to customers.",
@@ -92,6 +97,7 @@
     "tags": [".NET", "ServiceStack", "Go"]
   },
   {
+    "id": 6,
     "title": "Desktop App Developer",
     "company": "Euroclear",
     "description": "Development of tactical desktop apps aiming to quickly automate and support new business processes.",
@@ -110,6 +116,7 @@
     ]
   },
   {
+    "id": 7,
     "title": "Front-End Developer",
     "company": "Concentra",
     "description": "Lending a helping hand in implementing the redesign of two newspaper websites (Gazet van Antwerpen, Belang van Limburg).",
@@ -118,6 +125,7 @@
     "tags": ["HTML", "CSS", "Javascript"]
   },
   {
+    "id": 8,
     "title": "Microsoft Access Developer",
     "company": "Sesvanderhave",
     "description": "Development of an application to keep track of lab and regulatory data.",
