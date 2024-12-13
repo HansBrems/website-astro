@@ -4,18 +4,24 @@ import { useState } from 'react';
 import type { Category } from '../shared/models/category';
 import type { Project } from '../shared/models/project';
 import { getTagColor } from '../utils/tag-helper';
+import Button from './Button';
 import Tag from './Tag';
 
 interface Props {
   project: Project;
   categories: Category[];
+  showAllTags?: boolean;
 }
 
-export default function WorkExperience({ project, categories }: Props) {
+export default function WorkExperience({
+  project,
+  categories,
+  showAllTags,
+}: Props) {
   const from = format(project.from, 'MMM yyyy');
   const to = format(project.to, 'MMM yyyy');
 
-  const [showAll, setShowAll] = useState(true);
+  const [showAll, setShowAll] = useState(showAllTags);
 
   function toggleShowAll() {
     setShowAll(!showAll);
@@ -26,7 +32,7 @@ export default function WorkExperience({ project, categories }: Props) {
       <div>
         <div>
           <span className="text-2xl font-bold">{project.company}</span>
-          <span>·</span>
+          <span> · </span>
           <span>
             {from} - {to}
           </span>
@@ -43,7 +49,12 @@ export default function WorkExperience({ project, categories }: Props) {
           ),
         )}
 
-        {/* <div onClick={toggleShowAll}>{showAll ? 'Show less' : 'Show more'}</div> */}
+        {!showAllTags && project.tags.length > 5 && (
+          <Button
+            text={showAll ? 'Show less' : 'Show all'}
+            onClick={toggleShowAll}
+          />
+        )}
       </div>
     </div>
   );

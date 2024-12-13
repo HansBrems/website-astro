@@ -18,6 +18,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
             <WorkExperience
               categories={categories}
               project={project}
+              showAllTags
               client:load
             />
           ))
