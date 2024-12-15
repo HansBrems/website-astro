@@ -16,7 +16,18 @@ export default {
       sans: ['Noto Sans', 'sans-serif'],
       serif: ['IBM Plex Serif', 'serif'],
     },
-    extend: {},
+    extend: {
+      animation: {
+        jiggle: 'jiggle 0.3s ease-in-out',
+      },
+      keyframes: {
+        jiggle: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-3px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
+    },
   },
   plugins: [
     function ({ addBase, theme }) {
