@@ -13,8 +13,8 @@ export default {
   darkMode: 'selector',
   theme: {
     fontFamily: {
-      sans: ['Noto Sans', 'sans-serif'],
-      serif: ['IBM Plex Serif', 'serif'],
+      sans: ['Inter Variable', 'sans-serif'],
+      // serif: ['IBM Plex Serif', 'serif'],
     },
     extend: {
       animation: {
@@ -32,12 +32,12 @@ export default {
   plugins: [
     function ({ addBase, theme }) {
       addBase({
-        h1: { fontFamily: theme('fontFamily.serif') },
-        h2: { fontFamily: theme('fontFamily.serif') },
-        h3: { fontFamily: theme('fontFamily.serif') },
-        h4: { fontFamily: theme('fontFamily.serif') },
-        h5: { fontFamily: theme('fontFamily.serif') },
-        h6: { fontFamily: theme('fontFamily.serif') },
+        // h1: { fontFamily: theme('fontFamily.serif') },
+        // h2: { fontFamily: theme('fontFamily.serif') },
+        // h3: { fontFamily: theme('fontFamily.serif') },
+        // h4: { fontFamily: theme('fontFamily.serif') },
+        // h5: { fontFamily: theme('fontFamily.serif') },
+        // h6: { fontFamily: theme('fontFamily.serif') },
       });
     },
     require('@tailwindcss/typography'),
