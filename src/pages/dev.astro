@@ -1,9 +1,14 @@
 ---
 import Page from '../layouts/Page.astro';
 import Prose from '../components/Prose.astro';
+import MyFlow from '../components/MyFlow';
 ---
 
 <Page pageTitle="Dev">
+  <div>
+    <MyFlow client:load />
+  </div>
+
   <Prose>
     <article>
       <h1>In dolore esse sit laborum nisi Lorem sunt consequat tempor anim.</h1>
