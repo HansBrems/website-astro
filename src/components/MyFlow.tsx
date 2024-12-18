@@ -35,11 +35,11 @@ export default function MyFlow() {
   const [edges, setEdges] = useState(initialEdges);
 
   const onNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+    (changes: any) => setNodes((nds) => applyNodeChanges(changes, nds)),
     [setNodes],
   );
   const onEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+    (changes: any) => setEdges((eds) => applyEdgeChanges(changes, eds)),
     [setEdges],
   );
 
