@@ -4,17 +4,16 @@ import Socials from './Socials.astro';
 import ThemeToggle from './ThemeToggle.astro';
 ---
 
-<div class="flex flex-col gap-8">
-  <div class="flex items-center justify-end gap-8 p-4">
-    <Socials />
-    <ThemeToggle />
-  </div>
+<div
+  class="flex items-center justify-between gap-8 border-b bg-white p-4 drop-shadow-sm dark:border-stone-800 dark:bg-stone-900"
+>
+  <a href="/">
+    <Logo />
+  </a>
 
-  <div class="flex justify-center">
-    <div class="flex flex-col items-center gap-2">
-      <a href="/">
-        <Logo />
-      </a>
-    </div>
+  <div class="flex gap-4">
+    <Socials />
+    <div class="border-l border-stone-300 dark:border-stone-600"></div>
+    <ThemeToggle />
   </div>
 </div>

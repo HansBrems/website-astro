@@ -28,16 +28,18 @@ export default function WorkExperience({
   }
 
   return (
-    <div className="flex flex-col gap-2">
-      <div>
-        <div>
-          <span className="text-2xl font-bold">{project.company}</span>
-          <span> · </span>
-          <span>
+    <div className="flex flex-col gap-4 rounded border border-stone-200 bg-stone-50 p-8 dark:border-stone-800 dark:bg-stone-900">
+      <div className="flex flex-col gap-2">
+        <div className="flex items-center justify-between">
+          <span className="text-xl font-bold">{project.company}</span>
+          <span className="text-sm">
             {from} - {to}
           </span>
         </div>
-        <div className="text-sm text-stone-500">{project.title}</div>
+
+        <div className="text-sm text-pink-800 dark:text-teal-300">
+          {project.title}
+        </div>
       </div>
 
       <p>{project.description}</p>
