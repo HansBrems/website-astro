@@ -28,7 +28,7 @@ export default function WorkExperience({
   }
 
   return (
-    <div className="flex flex-col gap-4 rounded border border-stone-200 bg-stone-50 p-8 dark:border-stone-800 dark:bg-stone-900">
+    <div className="flex flex-col gap-4 rounded border border-stone-200 bg-[#fdfdfd] p-8 dark:border-stone-800 dark:bg-stone-900">
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold">{project.company}</span>

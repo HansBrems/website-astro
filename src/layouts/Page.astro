@@ -4,6 +4,7 @@ import '../styles/global.css';
 import { SEO } from 'astro-seo';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Main from '../components/Main.astro';
 
 interface Props {
   pageTitle: string;
@@ -36,16 +37,14 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>Longville Software - {pageTitle}</title>
   </head>
+
   <body class="antialiased dark:bg-stone-950">
     <div class="flex flex-col gap-8">
       <Header />
-
-      <div class="mx-auto mt-8 px-4 md:max-w-prose">
-        <main>
-          <slot />
-        </main>
-        <Footer />
-      </div>
+      <Main>
+        <slot />
+      </Main>
+      <Footer />
     </div>
   </body>
 </html>
