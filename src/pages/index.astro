@@ -1,16 +1,15 @@
 ---
-import FlyingCharactersCanvas from '../components/FlyingCharactersCanvas';
 import Prose from '../components/Prose.astro';
 import WorkExperience from '../components/WorkExperience.tsx';
 import Page from '../layouts/Page.astro';
 import { getCollection } from 'astro:content';
+import Link from '../shared/components/Link.astro';
 
 const projects = (await getCollection('projects')).map((x) => x.data);
 const categories = (await getCollection('categories')).map((x) => x.data);
 ---
 
 <Page pageTitle="Home">
-  <!-- <FlyingCharactersCanvas client:load /> -->
   <Prose>
     <div class="grid grid-cols-1 gap-4">
       <section>
@@ -46,7 +45,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
         </div>
 
         <div class="mt-4">
-          <a href="/projects" class="text-center">See more projects</a>
+          <Link href="/projects">See more projects</Link>
         </div>
       </section>
     </div>
