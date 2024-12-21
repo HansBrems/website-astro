@@ -30,7 +30,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
       <section>
         <h1>Recent Projects</h1>
 
-        <div class="not-prose flex flex-col gap-4">
+        <div class="not-prose flex flex-col gap-8">
           {
             projects
               .slice(0, 3)
