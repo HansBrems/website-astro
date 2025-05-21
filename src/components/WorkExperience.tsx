@@ -19,7 +19,7 @@ export default function WorkExperience({
   showAllTags,
 }: Props) {
   const from = format(project.from, 'MMM yyyy');
-  const to = format(project.to, 'MMM yyyy');
+  const to = project.to ? format(project.to, 'MMM yyyy') : 'Present';
 
   const [showAll, setShowAll] = useState(showAllTags);
 

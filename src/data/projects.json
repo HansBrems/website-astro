@@ -5,7 +5,7 @@
     "company": "Fluxys",
     "description": "Development and maintenance of multiple gas flow metering applications, both desktop and web-based,including REST APIs.",
     "from": "2020-06-30T08:00:00.000Z",
-    "to": "2024-12-11T08:00:00.000Z",
+    "to": null,
     "tags": [
       "Angular",
       "PrimeNG",
