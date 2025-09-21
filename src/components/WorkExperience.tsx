@@ -47,7 +47,7 @@ export default function WorkExperience({
       <div className="flex flex-wrap gap-2">
         {(showAll ? project.tags : project.tags.slice(0, 5)).map(
           (tag: string) => (
-            <Tag label={tag} color={getTagColor(categories, tag)} />
+            <Tag key={tag} label={tag} color={getTagColor(categories, tag)} />
           ),
         )}
 
