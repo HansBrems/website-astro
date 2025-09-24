@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Page from '../layouts/Page.astro';
-import Prose from '../components/Prose.astro';
-import WorkExperience from '../components/WorkExperience.tsx';
+import Prose from '../shared/components/layout/Prose.astro';
+import WorkExperience from '../shared/components/ui/WorkExperience.tsx';
 
 const projects = (await getCollection('projects')).map((x) => x.data);
 const categories = (await getCollection('categories')).map((x) => x.data);
