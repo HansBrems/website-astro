@@ -1,6 +1,6 @@
 ---
 import Prose from '../shared/components/layout/Prose.astro';
-import WorkExperience from '../shared/components/ui/WorkExperience.tsx';
+import WorkExperience from '../features/projects/WorkExperience.tsx';
 import Page from '../layouts/Page.astro';
 import { getCollection } from 'astro:content';
 import Link from '../shared/components/ui/Link.astro';
@@ -38,7 +38,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
                 <WorkExperience
                   categories={categories}
                   project={project}
-                  client:load
+                  client:visible
                 />
               ))
           }

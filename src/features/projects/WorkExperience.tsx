@@ -1,11 +1,11 @@
 import { format } from 'date-fns';
 import { useState } from 'react';
 
-import type { Category } from '../../models/category';
-import type { Project } from '../../models/project';
-import { getTagColor } from '../../utils/tag-helper';
-import Button from './Button';
+import type { Category } from '../../domain/models/category';
+import type { Project } from '../../domain/models/project';
+import Button from '../../shared/components/ui/Button';
 import Tag from './Tag';
+import { getTagColor } from './tag-helper';
 
 interface Props {
   project: Project;

@@ -1,4 +1,4 @@
-import type { Category } from '../models/category';
+import type { Category } from '../../domain/models/category';
 
 export function getTagColor(categories: Category[], tagName: string): string {
   let category = categories.find((c) => c.tags.includes(tagName));

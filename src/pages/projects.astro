@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Page from '../layouts/Page.astro';
 import Prose from '../shared/components/layout/Prose.astro';
-import WorkExperience from '../shared/components/ui/WorkExperience.tsx';
+import WorkExperience from '../features/projects/WorkExperience.tsx';
 
 const projects = (await getCollection('projects')).map((x) => x.data);
 const categories = (await getCollection('categories')).map((x) => x.data);
@@ -19,7 +19,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
               categories={categories}
               project={project}
               showAllTags
-              client:load
+              client:visible
             />
           ))
         }

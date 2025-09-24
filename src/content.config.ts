@@ -1,8 +1,8 @@
 import { file } from 'astro/loaders';
 import { defineCollection } from 'astro:content';
 
-import { categorySchema } from './shared/models/category';
-import { projectSchema } from './shared/models/project';
+import { categorySchema } from './domain/models/category';
+import { projectSchema } from './domain/models/project';
 
 const projects = defineCollection({
   loader: file('src/data/projects.json'),
