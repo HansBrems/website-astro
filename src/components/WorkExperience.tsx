@@ -32,7 +32,7 @@ export default function WorkExperience({
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold">{project.company}</span>
-          <span className="text-sm">
+          <span className="text-sm font-bold">
             {from} - {to}
           </span>
         </div>
