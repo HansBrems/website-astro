@@ -1,14 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: {
-    files: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
-    safelist: [
-      {
-        pattern: /^(?:bg|border|text)-(?:pink|stone|teal)-(?:50|[1-9]00|950)$/,
-        variants: ['dark'],
-      },
-    ],
-  },
   darkMode: 'selector',
   theme: {
     fontFamily: {
@@ -27,13 +18,10 @@ export default {
       },
     },
   },
-  plugins: [
-    function ({ addBase, theme }) {
-      addBase({
-        // Keep for later
-        // h1: { fontFamily: theme('fontFamily.serif') },
-      });
+  safelist: [
+    {
+      pattern: /^(?:bg|border|text)-(?:pink|stone|teal)-(?:50|[1-9]00|950)$/,
+      variants: ['dark'],
     },
-    require('@tailwindcss/typography'),
   ],
 };
