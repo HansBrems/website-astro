@@ -18,10 +18,4 @@ export default {
       },
     },
   },
-  safelist: [
-    {
-      pattern: /^(?:bg|border|text)-(?:pink|stone|teal)-(?:50|[1-9]00|950)$/,
-      variants: ['dark'],
-    },
-  ],
 };
