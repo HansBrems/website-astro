@@ -1,5 +1,9 @@
 # Longville Software
 
+## Node version
+
+The required Node version for Netlify is specified in `.node-version`. Netlify reads this file automatically to determine which Node version to use during builds. Update this file if the Node version needs to change.
+
 ## Colors
 
 These are the colors in use.
