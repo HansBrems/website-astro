@@ -42,9 +42,10 @@ Produce a written implementation plan that includes:
 Repeat the following cycle until the feature is complete and stable:
 
 1. **Implement** — make the code changes outlined in the plan
-2. **Test** — run relevant tests; write new tests if needed
-3. **Review** — check the changes for correctness, edge cases, and code quality
-4. If issues are found, fix them and repeat the cycle
+2. **Test** — use the `write-tests` skill to add or update tests for any new or changed logic
+3. **Build** — run `npm run build` to catch TypeScript and Astro diagnostics; use the `build-verify` skill if the build fails
+4. **Review** — check the changes for correctness, edge cases, and code quality
+5. If issues are found, fix them and repeat the cycle
 
 ### Step 5 — Update Documentation
 

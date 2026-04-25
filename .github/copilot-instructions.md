@@ -15,14 +15,12 @@ Static site. All data lives in `src/data/*.json`, validated by Zod schemas in `s
 
 These must be followed on every change — no exceptions. Detailed rationale and edge cases for each constraint → [conventions.md](.github/docs/conventions.md).
 
-1. **Plan before touching files.** Always present a plan and wait for confirmation before making any edits.
-2. **`Page.astro` is the root layout for every page.** Never write raw `<html>`, `<head>`, or `<body>` in a page.
-3. **Tailwind CSS only.** No CSS modules, no styled-components, no inline `style` attributes (except where Tailwind cannot cover it).
-4. **Zod schema for every data model.** Export both the schema (`*Schema`) and the inferred type from `src/domain/models/`.
-5. **React for interactive islands only.** Static content = `.astro`. React components hydrated with `client:visible` (lazy) or `client:load` (above-fold interactive).
-6. **Run `npm run build` after every change set.** Fix all TypeScript and Astro diagnostics before considering a task done. If the build fails, use the `build-verify` skill to triage.
-7. **All data in `src/data/*.json`.** No external APIs, no CMS, no database.
-8. **New pages**: update `astro.config.mjs` sitemap filter and `src/pages/robots.txt.ts` if the page should be excluded from crawlers.
+1. **`Page.astro` is the root layout for every page.** Never write raw `<html>`, `<head>`, or `<body>` in a page.
+2. **Tailwind CSS only.** No CSS modules, no styled-components, no inline `style` attributes (except where Tailwind cannot cover it).
+3. **Zod schema for every data model.** Export both the schema (`*Schema`) and the inferred type from `src/domain/models/`.
+4. **React for interactive islands only.** Static content = `.astro`. React components hydrated with `client:visible` (lazy) or `client:load` (above-fold interactive).
+5. **All data in `src/data/*.json`.** No external APIs, no CMS, no database.
+6. **New pages**: update `astro.config.mjs` sitemap filter and `src/pages/robots.txt.ts` if the page should be excluded from crawlers.
 
 ## Future Expansions
 
