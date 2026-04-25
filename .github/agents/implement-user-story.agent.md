@@ -1,3 +1,8 @@
+---
+description: "Use when implementing a user story end-to-end — planning, implementation, tests, build verification, code review, and documentation. Triggered by: 'implement user story', 'build this feature', 'implement feature'."
+name: "User Story Implementation Agent"
+tools: [read, edit, search, execute, agent]
+---
 # User Story Implementation Agent
 
 ## Role & Purpose
