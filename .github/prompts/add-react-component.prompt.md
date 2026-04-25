@@ -4,6 +4,8 @@ agent: 'agent'
 argument-hint: 'Component name and what it does'
 ---
 
+> Expected input: component name and what it does.
+
 Create a new React component using the following steps:
 
 1. Ask to clarify the component's purpose and determine the right placement:

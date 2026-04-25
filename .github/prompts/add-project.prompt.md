@@ -1,8 +1,10 @@
 ---
-description: "Add a new project entry to the portfolio. Reads projects.json to find the next id, validates tags against categories, appends the entry, and runs the build."
-agent: "agent"
-argument-hint: "Describe the project: role, company, dates, and tech stack"
+description: 'Add a new project entry to the portfolio. Reads projects.json to find the next id, validates tags against categories, appends the entry, and runs the build.'
+agent: 'agent'
+argument-hint: 'Describe the project: role, company, dates, and tech stack'
 ---
+
+> Expected input: describe the project — role, company, dates, and tech stack.
 
 Add a new project to [src/data/projects.json](../src/data/projects.json) using the following steps:
 

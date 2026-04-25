@@ -152,7 +152,7 @@ Prettier is configured with:
 ## SEO & Analytics
 
 - **SEO:** `astro-seo` sets `<title>` as `Longville Software - {pageTitle}`. A sitemap is generated at `/sitemap-index.xml`.
-- **Analytics:** Google Analytics (GA4, measurement ID `G-HDGEL4WEZ7`) is loaded as a Partytown script to offload execution to a web worker and avoid blocking the main thread.
+- **Analytics:** Google Analytics (GA4, measurement ID `G-HDGEL4WEZ7`) is loaded as a Partytown script to offload execution to a web worker and avoid blocking the main thread. It fires on every page via `Page.astro`'s `<head>` — there is no per-page opt-out.
 
 ---
 
