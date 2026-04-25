@@ -5,7 +5,7 @@
 Personal portfolio website for Hans Brems (Longville Software BV). Freelance software developer based in Langdorp, Belgium.
 
 - **Production URL**: https://longville-software.be
-- **Full technical reference**: [.github/TECHNICAL_DOCS.md](.github/TECHNICAL_DOCS.md)
+- **Technical docs**: `.github/docs/` — see the [Technical Reference](#technical-reference) section below
 
 ## Tech Stack
 
@@ -40,9 +40,17 @@ These must be followed on every change — no exceptions:
 - **Blog**: implement as a new Astro content collection using the `glob()` loader with `.mdx` files. Do not use a CMS or external API.
 - **Contact form**: no server-side handler exists yet. Use a third-party form service (e.g. Resend, Formspree) or defer until a server adapter is added.
 
-## Conventions
+## Technical Reference
 
-See [.github/TECHNICAL_DOCS.md](.github/TECHNICAL_DOCS.md) for the full component dependency map, data flow, invariants, and how-to guides.
+Documentation is split by topic in `.github/docs/`. Read the relevant file when you need detail on a specific area:
+
+| File                                              | Contents                                                                      |
+| ------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [architecture.md](.github/docs/architecture.md)   | Tech stack, project structure, pages, configuration, dev commands, deployment |
+| [components.md](.github/docs/components.md)       | Component descriptions, dependency map, props reference                       |
+| [data-and-flow.md](.github/docs/data-and-flow.md) | Content model (Project/Category schemas), data flow                           |
+| [conventions.md](.github/docs/conventions.md)     | Coding conventions, invariants, unstated defaults                             |
+| [how-to.md](.github/docs/how-to.md)               | Step-by-step guides (add project, add tag, add page)                          |
 
 ## Communication
 
