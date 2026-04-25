@@ -37,4 +37,3 @@ Behavior that is not obvious from reading the component surface.
 - **Projects on the home page are limited to the first 3 entries** from the collection (`.slice(0, 3)`). Order is determined by the order of objects in `projects.json` — there is no sort applied in code.
 - **`Main.astro` constrains content width to `prose` (65ch) on `md+` screens** and is centered with `mx-auto`.
 - **`Socials.astro` is rendered in both `Header` and `Footer`.** In the header it is hidden on mobile (`hidden md:flex`).
-- **Google Analytics fires on every page** because it is part of `Page.astro`'s `<head>`. There is no per-page opt-out.

@@ -4,6 +4,8 @@ agent: 'agent'
 argument-hint: "Page name and purpose (e.g. 'about — personal bio')"
 ---
 
+> Expected input: page name and purpose (e.g. "about — personal bio").
+
 Create a new Astro page using the following steps:
 
 1. Ask:

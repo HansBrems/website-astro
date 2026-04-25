@@ -5,26 +5,15 @@
 Personal portfolio website for Hans Brems (Longville Software BV). Freelance software developer based in Langdorp, Belgium.
 
 - **Production URL**: https://longville-software.be
-- **Technical docs**: `.github/docs/` — see the [Technical Reference](#technical-reference) section below
-
-## Tech Stack
-
-| Layer            | Technology                              |
-| ---------------- | --------------------------------------- |
-| Framework        | Astro v5                                |
-| UI (interactive) | React v19 (islands only)                |
-| Styling          | Tailwind CSS v4                         |
-| Language         | TypeScript (strict)                     |
-| Data             | Static JSON + Astro Content Collections |
-| Validation       | Zod                                     |
+- **Technical docs**: `.github/docs/` — see the Technical Reference section below
 
 ## Architecture
 
-Static site. All data lives in `src/data/*.json`, validated by Zod schemas in `src/domain/models/`. Pages are `.astro` files that load collections via `getCollection()` and pass data to React island components. No database, no external API calls, no server-side logic.
+Static site. All data lives in `src/data/*.json`, validated by Zod schemas in `src/domain/models/`. Pages are `.astro` files that load collections via `getCollection()` and pass data to React island components. No database, no external API calls, no server-side logic. Full tech stack → [architecture.md](.github/docs/architecture.md).
 
 ## Hard Constraints
 
-These must be followed on every change — no exceptions:
+These must be followed on every change — no exceptions. Detailed rationale and edge cases for each constraint → [conventions.md](.github/docs/conventions.md).
 
 1. **Plan before touching files.** Always present a plan and wait for confirmation before making any edits.
 2. **`Page.astro` is the root layout for every page.** Never write raw `<html>`, `<head>`, or `<body>` in a page.
@@ -51,9 +40,3 @@ Documentation is split by topic in `.github/docs/`. Read the relevant file when 
 | [data-and-flow.md](.github/docs/data-and-flow.md) | Content model (Project/Category schemas), data flow                           |
 | [conventions.md](.github/docs/conventions.md)     | Coding conventions, invariants, unstated defaults                             |
 | [how-to.md](.github/docs/how-to.md)               | Step-by-step guides (add project, add tag, add page)                          |
-
-## Communication
-
-- Ask questions to clarify the request if needed.
-- Provide concise and relevant answers.
-- Refrain from using filler words.

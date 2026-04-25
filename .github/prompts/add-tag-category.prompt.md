@@ -4,6 +4,8 @@ agent: 'agent'
 argument-hint: 'Category name, Tailwind color, and tags to include'
 ---
 
+> Expected input: category name, Tailwind color, and tags to include.
+
 Add a new tag category (or new tags to an existing category) using the following steps:
 
 1. Read [src/data/categories.json](../src/data/categories.json).
