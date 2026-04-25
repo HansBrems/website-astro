@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": ".github/hooks/scripts/astro-check.sh",
+        "timeout": 60
+      }
+    ]
+  }
+}
