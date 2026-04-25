@@ -1,6 +1,7 @@
 import { z } from 'astro/zod';
 
 export const projectSchema = z.object({
+  id: z.number(),
   title: z.string(),
   company: z.string(),
   description: z.string(),

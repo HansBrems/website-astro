@@ -189,7 +189,7 @@ All tests must pass before the implementation is considered done. If any test fa
 
 ## Conventions
 
-- **Test files live in `__tests__/`** next to the module they test, not in a top-level `tests/` folder.
+- **Test files live co-located with the module they test** (e.g. `Tag.test.tsx` next to `Tag.tsx`), not in a `__tests__/` subdirectory or a top-level `tests/` folder.
 - **One `describe` block per module.** Use nested `describe` to group sub-units if needed.
 - **Test names describe behaviour**, not implementation (`'shows "Present" when to is null'`, not `'tests the to field'`).
 - **No snapshots.** Assert on specific text, roles, and classes — not serialised HTML.
