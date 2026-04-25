@@ -1,7 +1,7 @@
 ---
 description: 'Inspect staged git changes, generate a conventional commit message, confirm with the user, and commit. Ignores unstaged changes.'
 agent: 'agent'
-tools: ['execute/runInTerminal', 'vscode/askQuestions']
+tools: ['execute/runInTerminal', 'read/readFile', 'vscode/askQuestions']
 ---
 
 1. Use the `commit-message` skill to generate a commit message for the currently staged changes.
