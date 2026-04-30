@@ -4,6 +4,10 @@
 
 The required Node version for Netlify is specified in `.node-version`. Netlify reads this file automatically to determine which Node version to use during builds. Update this file if the Node version needs to change.
 
+## Tailwind Customizations
+
+See [`.github/docs/tailwind.md`](.github/docs/tailwind.md) for a full description of every customization made to the Tailwind CSS defaults (dark mode strategy, font overrides, animations, plugins, safelisted colors, and base resets).
+
 ## Colors
 
 These are the colors in use.
