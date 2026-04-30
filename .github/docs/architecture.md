@@ -122,6 +122,8 @@ Generated at build time. Disallows `/dev` and includes the sitemap URL.
 - **Font family:** Inter Variable for `sans`.
 - **Custom animation:** `jiggle` — vertical bounce keyframes.
 
+For a full description of every Tailwind customization, see [tailwind.md](tailwind.md).
+
 ---
 
 ## Development
