@@ -13,16 +13,14 @@ const categories = (await getCollection('categories')).map((x) => x.data);
     <section>
       <h1>Projects</h1>
       <div class="not-prose flex flex-col gap-8">
-        {
-          projects.map((project) => (
-            <Project
-              categories={categories}
-              project={project}
-              showAllTags
-              client:visible
-            />
-          ))
-        }
+        {projects.map((project) => (
+          <Project
+            categories={categories}
+            project={project}
+            showAllTags
+            client:visible
+          />
+        ))}
       </div>
     </section>
   </Prose>
