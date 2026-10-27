@@ -2,6 +2,11 @@
 @config '../../tailwind.config.mjs';
 @plugin '@tailwindcss/typography';
 
+@theme {
+  /* Soft, offset-free shadow used to give headings a subtle glow. */
+  --text-shadow-glow: 0 0 12px rgb(0 0 0 / 0.5);
+}
+
 /* Safelist dynamically-composed color classes (e.g. `border-${color}-500` in Tag.tsx).
    Tailwind v4 does not process the JS-config `safelist`; use @source inline() instead. */
 @source inline(
