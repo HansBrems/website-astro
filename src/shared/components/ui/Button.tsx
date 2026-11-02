@@ -6,7 +6,7 @@ interface Props {
 export default function Button({ text, onClick }: Props) {
   return (
     <button
-      className={`hover:animate-jiggle rounded-md border-b-[1px] border-solid border-stone-500 bg-teal-500 p-2 text-xs font-bold text-white transition-colors duration-500 ease-in-out hover:bg-teal-600 dark:text-stone-100`}
+      className={`hover:animate-jiggle rounded-md border-b-[1px] border-solid border-stone-500 bg-teal-500 p-2 text-[13px]/4 font-bold md:text-sm/4 text-white transition-colors duration-500 ease-in-out hover:bg-teal-600 dark:text-stone-100`}
       onClick={onClick}
     >
       {text}
