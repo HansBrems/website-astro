@@ -18,7 +18,6 @@ const categories = (await getCollection('categories')).map((x) => x.data);
             categories={categories}
             project={project}
             showAllTags
-            client:visible
           />
         ))}
       </div>
