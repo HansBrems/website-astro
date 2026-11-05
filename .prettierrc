@@ -4,6 +4,7 @@
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "singleQuote": true,
+  "tailwindStylesheet": "./src/styles/global.css",
   "plugins": [
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-astro",

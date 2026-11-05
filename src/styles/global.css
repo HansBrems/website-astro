@@ -1,6 +1,8 @@
 @import 'tailwindcss';
-@config '../../tailwind.config.mjs';
 @plugin '@tailwindcss/typography';
+
+/* Dark mode is toggled by a `.dark` class on <html> (see ThemeToggle.astro). */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   /* Font families are loaded by the Astro Fonts API (see `fonts` in astro.config.mjs). */
@@ -9,10 +11,23 @@
 
   /* Soft, offset-free shadow used to give headings a subtle glow. */
   --text-shadow-glow: 0 0 12px rgb(0 0 0 / 0.5);
+
+  /* Small vertical bounce used on button hover. */
+  --animate-jiggle: jiggle 1s ease-in-out;
+
+  @keyframes jiggle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
 }
 
 /* Safelist dynamically-composed color classes (e.g. `border-${color}-500` in Tag.tsx).
-   Tailwind v4 does not process the JS-config `safelist`; use @source inline() instead. */
+   Tailwind cannot detect these by scanning source files, so they are generated explicitly. */
 @source inline(
   'border-{pink,stone,teal}-{50,100,200,300,400,500,600,700,800,900,950}'
 );
