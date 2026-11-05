@@ -2,9 +2,6 @@
 export default {
   darkMode: 'selector',
   theme: {
-    fontFamily: {
-      sans: ['Inter Variable', 'sans-serif'],
-    },
     extend: {
       animation: {
         jiggle: 'jiggleFrames 1s ease-in-out',
