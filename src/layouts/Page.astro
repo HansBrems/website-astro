@@ -31,7 +31,7 @@ const { pageTitle } = Astro.props;
       gtag('config', 'G-HDGEL4WEZ7');
     </script>
 
-    <SEO title="Longville Software" />
+    <SEO title={`Longville Software - ${pageTitle}`} />
     <meta charset="utf-8" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -39,7 +39,6 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <Font cssVariable="--font-inter-family" preload={[{ style: 'normal' }]} />
     <Font cssVariable="--font-orbitron-family" preload />
-    <title>Longville Software - {pageTitle}</title>
   </head>
 
   <body class="antialiased dark:bg-stone-950">
