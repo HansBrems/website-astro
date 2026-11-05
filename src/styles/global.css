@@ -3,6 +3,10 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
+  /* Font families are loaded by the Astro Fonts API (see `fonts` in astro.config.mjs). */
+  --font-brand: var(--font-orbitron-family);
+  --font-sans: var(--font-inter-family);
+
   /* Soft, offset-free shadow used to give headings a subtle glow. */
   --text-shadow-glow: 0 0 12px rgb(0 0 0 / 0.5);
 }
@@ -19,48 +23,6 @@
   'text-{pink,stone,teal}-{50,100,200,300,400,500,600,700,800,900,950}'
 );
 
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-
 html {
   /* Ensures that the text size remains consistent across devies. */
   -webkit-text-size-adjust: 100%;
@@ -72,8 +34,4 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.font-orbitron {
-  font-family: 'Orbitron', sans-serif;
 }
