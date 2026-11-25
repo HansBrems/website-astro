@@ -1,6 +1,9 @@
-import type { Category } from '../../domain/models/category';
+import type { Category, CategoryColor } from '../../domain/models/category';
 
-export function getTagColor(categories: Category[], tagName: string): string {
+export function getTagColor(
+  categories: Category[],
+  tagName: string,
+): CategoryColor {
   let category = categories.find((c) => c.tags.includes(tagName));
   if (!category) category = categories.find((c) => c.name === 'other');
   return category?.color || 'stone';
