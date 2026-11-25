@@ -8,12 +8,12 @@ interface Props {
 
 const { href, external = false, icon = false, title } = Astro.props;
 
-const colorClass = icon ? '' : 'text-pink-800 dark:text-teal-300';
+const colorClass = icon ? '' : 'text-accent';
 const textClass = icon ? 'text-2xl' : '';
 ---
 
 <a
-  class=`${colorClass} ${textClass} hover:text-pink-600 dark:hover:text-teal-500`
+  class=`${colorClass} ${textClass} hover:text-accent-hover`
   href={href}
   target={external ? '_blank' : ''}
   title={title}
