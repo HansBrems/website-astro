@@ -5,6 +5,27 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  /* Theme colors. Components use these role names instead of palette names,
+     so the site palette can be changed here in one place. */
+
+  /* Accent for links, headings and the logo. Switches palette in dark mode (see `.dark` below). */
+  --color-accent: var(--color-pink-800);
+  --color-accent-hover: var(--color-pink-600);
+  --color-accent-soft: var(--color-pink-700);
+
+  /* Gray used for text, borders and backgrounds in both modes. */
+  --color-neutral-50: var(--color-stone-50);
+  --color-neutral-100: var(--color-stone-100);
+  --color-neutral-200: var(--color-stone-200);
+  --color-neutral-300: var(--color-stone-300);
+  --color-neutral-400: var(--color-stone-400);
+  --color-neutral-500: var(--color-stone-500);
+  --color-neutral-600: var(--color-stone-600);
+  --color-neutral-700: var(--color-stone-700);
+  --color-neutral-800: var(--color-stone-800);
+  --color-neutral-900: var(--color-stone-900);
+  --color-neutral-950: var(--color-stone-950);
+
   /* Font families are loaded by the Astro Fonts API (see `fonts` in astro.config.mjs). */
   --font-brand: var(--font-orbitron-family);
   --font-sans: var(--font-inter-family);
@@ -26,17 +47,11 @@
   }
 }
 
-/* Safelist dynamically-composed color classes (e.g. `border-${color}-500` in Tag.tsx).
-   Tailwind cannot detect these by scanning source files, so they are generated explicitly. */
-@source inline(
-  'border-{pink,stone,teal}-{50,100,200,300,400,500,600,700,800,900,950}'
-);
-@source inline(
-  'bg-{pink,stone,teal}-{50,100,200,300,400,500,600,700,800,900,950}'
-);
-@source inline(
-  'text-{pink,stone,teal}-{50,100,200,300,400,500,600,700,800,900,950}'
-);
+.dark {
+  --color-accent: var(--color-teal-300);
+  --color-accent-hover: var(--color-teal-500);
+  --color-accent-soft: var(--color-teal-200);
+}
 
 html {
   /* Ensures that the text size remains consistent across devies. */

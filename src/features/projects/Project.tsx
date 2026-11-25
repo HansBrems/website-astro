@@ -24,7 +24,7 @@ export default function Project({ project, categories, showAllTags }: Props) {
   }
 
   return (
-    <div className="flex flex-col gap-4 rounded border border-stone-200 bg-stone-50 p-8 dark:border-stone-800 dark:bg-stone-900">
+    <div className="flex flex-col gap-4 rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-800 dark:bg-neutral-900">
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold">{project.company}</span>
@@ -33,7 +33,7 @@ export default function Project({ project, categories, showAllTags }: Props) {
           </span>
         </div>
 
-        <div className="text-sm text-pink-800 dark:text-teal-300">
+        <div className="text-sm text-accent">
           {project.title}
         </div>
       </div>
