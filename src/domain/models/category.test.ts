@@ -30,6 +30,10 @@ describe('categorySchema', () => {
     expect(() => categorySchema.parse(rest)).toThrow();
   });
 
+  it('throws when color is not a supported color', () => {
+    expect(() => categorySchema.parse({ ...valid, color: 'purple' })).toThrow();
+  });
+
   it('throws when tags is missing', () => {
     const { tags, ...rest } = valid;
     expect(() => categorySchema.parse(rest)).toThrow();
