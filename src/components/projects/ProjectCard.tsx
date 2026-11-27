@@ -1,20 +1,24 @@
 import { format } from 'date-fns';
 import { useState } from 'react';
 
-import type { Category } from '@/schemas/category';
-import type { Project as ProjectModel } from '@/schemas/project';
 import Button from '@/components/ui/Button';
+import type { Category } from '@/schemas/category';
+import type { Project } from '@/schemas/project';
 
 import Tag from './Tag';
 import { getTagColor } from './tag-color';
 
 interface Props {
-  project: ProjectModel;
+  project: Project;
   categories: Category[];
   showAllTags?: boolean;
 }
 
-export default function Project({ project, categories, showAllTags }: Props) {
+export default function ProjectCard({
+  project,
+  categories,
+  showAllTags,
+}: Props) {
   const from = format(project.from, 'MMM yyyy');
   const to = project.to ? format(project.to, 'MMM yyyy') : 'Present';
 
