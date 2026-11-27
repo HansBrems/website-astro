@@ -1,6 +1,6 @@
 ---
 import Prose from '@/components/ui/Prose.astro';
-import Project from '@/components/projects/ProjectCard.tsx';
+import ProjectCard from '@/components/projects/ProjectCard.tsx';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import Link from '@/components/ui/Link.astro';
@@ -31,7 +31,11 @@ const categories = (await getCollection('categories')).map((x) => x.data);
 
         <div class="not-prose flex flex-col gap-8">
           {projects.slice(0, 3).map((project) => (
-            <Project categories={categories} project={project} client:visible />
+            <ProjectCard
+              categories={categories}
+              project={project}
+              client:visible
+            />
           ))}
         </div>
 
