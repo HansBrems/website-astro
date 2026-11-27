@@ -6,7 +6,7 @@ import type { Project as ProjectModel } from '@/schemas/project';
 import Button from '@/shared/components/ui/Button';
 
 import Tag from './Tag';
-import { getTagColor } from './tag-helper';
+import { getTagColor } from './tag-color';
 
 interface Props {
   project: ProjectModel;

@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 import type { Category } from '@/schemas/category';
 import type { Project as ProjectModel } from '@/schemas/project';
 
-import Project from './Project';
+import Project from './ProjectCard';
 
 const categories: Category[] = [
   { id: 1, name: 'back-end', color: 'teal', tags: ['C#'] },
