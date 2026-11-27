@@ -1,9 +1,10 @@
 import { format } from 'date-fns';
 import { useState } from 'react';
 
-import type { Category } from '../../domain/models/category';
-import type { Project as ProjectModel } from '../../domain/models/project';
-import Button from '../../shared/components/ui/Button';
+import type { Category } from '@/schemas/category';
+import type { Project as ProjectModel } from '@/schemas/project';
+import Button from '@/shared/components/ui/Button';
+
 import Tag from './Tag';
 import { getTagColor } from './tag-helper';
 
@@ -33,9 +34,7 @@ export default function Project({ project, categories, showAllTags }: Props) {
           </span>
         </div>
 
-        <div className="text-sm text-accent">
-          {project.title}
-        </div>
+        <div className="text-sm text-accent">{project.title}</div>
       </div>
 
       <p>{project.description}</p>

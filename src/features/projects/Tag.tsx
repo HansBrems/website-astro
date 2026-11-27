@@ -1,4 +1,4 @@
-import type { CategoryColor } from '../../domain/models/category';
+import type { CategoryColor } from '@/schemas/category';
 
 export interface Props {
   color: CategoryColor;

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import projectsData from '../../data/projects.json';
+import projectsData from '@/data/projects.json';
+
 import { projectSchema } from './project';
 
 const valid = {

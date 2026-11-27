@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import Page from '../layouts/Page.astro';
-import Prose from '../shared/components/layout/Prose.astro';
-import Project from '../features/projects/Project.tsx';
+import Page from '@/layouts/Page.astro';
+import Prose from '@/shared/components/layout/Prose.astro';
+import Project from '@/features/projects/Project.tsx';
 
 const projects = (await getCollection('projects')).map((x) => x.data);
 const categories = (await getCollection('categories')).map((x) => x.data);
@@ -14,11 +14,7 @@ const categories = (await getCollection('categories')).map((x) => x.data);
       <h1>Projects</h1>
       <div class="not-prose flex flex-col gap-8">
         {projects.map((project) => (
-          <Project
-            categories={categories}
-            project={project}
-            showAllTags
-          />
+          <Project categories={categories} project={project} showAllTags />
         ))}
       </div>
     </section>

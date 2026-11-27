@@ -2,8 +2,9 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it } from 'vitest';
 
-import type { Category } from '../../domain/models/category';
-import type { Project as ProjectModel } from '../../domain/models/project';
+import type { Category } from '@/schemas/category';
+import type { Project as ProjectModel } from '@/schemas/project';
+
 import Project from './Project';
 
 const categories: Category[] = [
