@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import categoriesData from '../../data/categories.json';
+import categoriesData from '@/data/categories.json';
+
 import { categorySchema } from './category';
 
 const valid = {

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import type { Category } from '../../domain/models/category';
+import type { Category } from '@/schemas/category';
+
 import { getTagColor } from './tag-helper';
 
 const categories: Category[] = [

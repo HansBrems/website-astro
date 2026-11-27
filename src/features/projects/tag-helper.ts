@@ -1,4 +1,4 @@
-import type { Category, CategoryColor } from '../../domain/models/category';
+import type { Category, CategoryColor } from '@/schemas/category';
 
 export function getTagColor(
   categories: Category[],

@@ -1,6 +1,6 @@
 {
   "importOrderParserPlugins": ["decorators-legacy", "jsx", "typescript"],
-  "importOrder": ["^~/", "^[./]"],
+  "importOrder": ["^@/", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "singleQuote": true,
