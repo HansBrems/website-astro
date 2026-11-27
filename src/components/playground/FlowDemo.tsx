@@ -30,7 +30,7 @@ const initialNodes = [
   },
 ];
 
-export default function MyFlow() {
+export default function FlowDemo() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
 
