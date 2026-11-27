@@ -1,10 +1,10 @@
 ---
-import Page from '@/layouts/Page.astro';
-import Prose from '@/shared/components/layout/Prose.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Prose from '@/components/ui/Prose.astro';
 import MyFlow from '@/shared/components/ui/experimental/MyFlow';
 ---
 
-<Page pageTitle="Dev">
+<BaseLayout pageTitle="Dev">
   <div>
     <MyFlow client:load />
   </div>
@@ -48,4 +48,4 @@ import MyFlow from '@/shared/components/ui/experimental/MyFlow';
         &#125;</pre>
     </article>
   </Prose>
-</Page>
+</BaseLayout>
