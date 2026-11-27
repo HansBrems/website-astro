@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import type { Category } from '@/schemas/category';
 
-import { getTagColor } from './tag-helper';
+import { getTagColor } from './tag-color';
 
 const categories: Category[] = [
   { id: 1, name: 'back-end', color: 'teal', tags: ['C#', 'Go'] },
