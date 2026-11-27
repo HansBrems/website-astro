@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Prose from '@/components/ui/Prose.astro';
-import MyFlow from '@/components/playground/FlowDemo';
+import FlowDemo from '@/components/playground/FlowDemo';
 ---
 
 <BaseLayout pageTitle="Dev">
   <div>
-    <MyFlow client:load />
+    <FlowDemo client:load />
   </div>
 
   <Prose>
